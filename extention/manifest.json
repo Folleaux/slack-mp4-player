@@ -1,0 +1,17 @@
+{
+  "name": "Slack mp4 Player",
+  "version": "1.0.0",
+  "description": "Injects an inline video player for mp4 videos in slack chanels",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.slack.com/*"],
+      "js": ["injectPlayers.js"]
+    }
+  ],
+  "manifest_version": 2
+}
+
+
